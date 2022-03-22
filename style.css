@@ -1,17 +1,21 @@
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1; /*sstart with 1 by 1 */
-  }
-  
-  #container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-  }
-  
-  .grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
+.flex-container {
+  height: 100vh;
+  width: 100vw;
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(229, 226, 226);
+}
+
+.board {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+
+
+
